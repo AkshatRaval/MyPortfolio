@@ -38,7 +38,7 @@ const Skills = () => {
           <button
             key={key}
             className={
-              `capitalize text-[18px] border border-purple-500/50 rounded-full px-7 py-1 transition-colors duration-200 ` +
+              `capitalize cursor-pointer text-[18px] border border-purple-500/50 rounded-full px-7 py-1 transition-colors duration-200 ` +
               (activeCatogory === catagory
                 ? 'bg-purple-500 text-white'
                 : 'bg-transparent text-purple-500 hover:bg-purple-500 hover:text-white')

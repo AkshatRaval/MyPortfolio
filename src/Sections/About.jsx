@@ -67,18 +67,21 @@ const About = () => {
                     <div className='absolute inset-x-0 pointer-events-none -bottom-4 h-1/2 sm:h-1/3 bg-gradient-to-t from-indigo' />
                 </div>
                 {/* Grid 2 */}
-                <div className="grid-default-color grid-2">
-                    <img src="assets/.png" className='absolute scale-[1.75] -right-[5rem] -top-[1rem] md:scale-[3] md:left-50 md:inset-y-10 lg:scale-[2.5]' />
-                    <div className='z-10'>
-                        <p className='headtext'>Soft Skills</p>
-                        <div className='flex flex-wrap gap-2 gap-y-5'>
+                <div className="grid-default-color grid-2 relative overflow-hidden">
+                    {/* GRADIENT BACKGROUND – Behind content */}
+                    <div className="absolute inset-x-0 bottom-0 h-20 sm:h-24 bg-gradient-to-t from-indigo pointer-events-none z-0" />
+                    {/* CONTENT – On top of the gradient */}
+                    <div className="relative z-10">
+                        <p className="headtext">Soft Skills</p>
+                        <div className="flex flex-wrap gap-2 sm:gap-y-1 lg:gap-y-5">
                             {skills.map((skill) => (
-                                <MiniCard key={skill.id} skill={skill.skillName} />
+                                <MiniCard key={skill.id} skill={skill.skillName}/>
                             ))}
                         </div>
                     </div>
-                    <div className='absolute inset-x-0 pointer-events-none -bottom-4 h-1/2 sm:h-1/3 bg-gradient-to-t from-indigo' />
+
                 </div>
+
                 {/* Grid 3 */}
                 <div className="grid-black-color grid-3">
                     <div className="z-10 w-[50%]">
@@ -104,9 +107,8 @@ const About = () => {
                 <div className="grid-default-color grid-5">
                     <div className='z-10 w-[60%] '>
                         <p className='headtext'>Tech Stack</p>
-                        <p className="subtext text-justify">
-                            I specialize in using modern programming languages, frameworks, and tools to develop applications that are both robust and scalable. My approach emphasizes clean architecture, performance, and long-term maintainability, ensuring that the solutions I deliver can evolve seamlessly with changing requirements.
-                        </p>
+                        <p className="subtext">
+I build robust, scalable applications using modern languages, frameworks, and tools. My focus is on clean architecture, high performance, and long-term maintainability to support evolving needs.                        </p>
                     </div>
                     <div className='absolute inset-y-0 md:inset-y-9 w-full h-full start-[50%] md:scale-125'>
                         <Frameworks />
