@@ -56,7 +56,6 @@ const Navigation = () => {
                     <nav className='hidden sm:flex'>
                         <Navigation menuList={menuList} />
                     </nav>
-
                 </div>
             </div>
             {isOpen && <motion.div className='block overflow-hidden text-center sm:hidden' initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0 }} style={{ maxHeight: '100vh' }} transition={{ duration: 0.7 }}>

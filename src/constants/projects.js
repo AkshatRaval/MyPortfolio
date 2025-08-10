@@ -11,4 +11,17 @@ export const myProjects = [
         image: "assets/Projects/kalyanWeb.png",
         tags: ["HTML/CSS", "JavaScript", "React", "Tailwind CSS", "Node.js", "Express"]
     },
+    {
+        id: 2,
+        title: "Personal Finance Manager",
+        description: "A modern, responsive web app designed to help users track income, expenses, and budgets with ease, offering powerful analytics and a clean user interface.",
+        subDescription: [
+            "The app features a sleek dashboard displaying real-time financial summaries, interactive charts, and categorized transactions. Users can set monthly budgets, receive alerts when nearing limits, and filter/search their transaction history effortlessly.",
+            "Built with ReactJS, Tailwind CSS, and Firebase, it includes secure authentication, protected routes, and responsive design for seamless use on desktop and mobile. Smooth animations and an intuitive layout ensure an engaging and productive user experience."
+        ],
+        href: "https://levelupfinance.vercel.app",
+        image: "assets/Projects/personalFinanceApp.png",
+        tags: ["React", "Tailwind CSS", "Firebase", "JavaScript"]
+    }
+
 ]
